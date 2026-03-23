@@ -38,7 +38,7 @@ const About3 = () => {
 										<li>Amazon Web Services</li>
 										<li>Intelligence Artificielle</li>
 									</ul>
-									<ButtonPrimary text="Plus" url="/about" />
+									{/*<ButtonPrimary text="Plus" url="/about" />*/}
 								</div>
 							</div>
 						</div>

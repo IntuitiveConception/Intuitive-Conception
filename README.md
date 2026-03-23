@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img src="public/images/logos/IC_logo.png" alt="IC Logo" width="200"/>
+</p>
 
-## Getting Started
+# 🚀 Solutions Web Sur Mesure – De l’idée à la production
 
-First, run the development server:
+Nous concevons, développons et déployons des applications web complètes, performantes et évolutives.  
+Notre approche repose sur une méthodologie structurée, orientée résultats, permettant de transformer une idée en un produit concret, fiable et prêt à évoluer.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 🧠 Audit & Maquette
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Cette phase permet de structurer votre projet en profondeur en clarifiant vos objectifs, vos besoins et vos contraintes. Elle pose les bases solides nécessaires à une exécution efficace et maîtrisée.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Analyse des besoins métier et techniques  
+- Définition des user stories  
+- Conception de maquettes fonctionnelles  
 
-## Learn More
+👉 Résultat : une vision claire, validée et prête à être développée
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# ⚙️ Développement Modulaire
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Le développement est réalisé de manière progressive, par modules fonctionnels indépendants, permettant des livraisons régulières et exploitables.
 
-## Deploy on Vercel
+- Définition des livrables par fonctionnalités  
+- Intégration et développement continus  
+- Gestion des versions et évolutions  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+👉 Résultat : une application construite étape par étape, avec visibilité et flexibilité
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# ☁️ Infrastructure Cloud & Déploiement
+
+Votre application est mise en ligne dans un environnement sécurisé, performant et évolutif, prêt à accueillir vos utilisateurs.
+
+- Hébergement API & Frontend  
+- Configuration domaine & DNS  
+- Sécurité et gestion des accès  
+
+👉 Résultat : une application accessible, stable et prête à évoluer
+
+---
+
+# 🛠️ Maintenance & Support
+
+Une fois en production, votre application est suivie, maintenue et optimisée pour garantir sa fiabilité dans le temps.
+
+- Mises à jour techniques et sécurité  
+- Support technique structuré  
+- Sauvegardes et monitoring  
+
+👉 Résultat : sérénité, stabilité et continuité de service
+
+---
+
+# 🎯 Une approche complète
+
+De l’idée initiale jusqu’à l’exploitation en production, chaque étape est pensée pour :
+
+- Réduire les risques  
+- Accélérer la mise en ligne  
+- Garantir la qualité  
+- Assurer la scalabilité  
+
+---
+
+# 🤝 Travaillons ensemble
+
+Vous souhaitez optimiser votre métier ?  
+Nous vous accompagnons pour le transformer au travers de solutions concrètes, performantes et durables.
+
+📩 Contactez-nous pour en discuter
