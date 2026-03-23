@@ -1,0 +1,130 @@
+[
+	{
+		"id": 1,
+		"name": "Home",
+		"path": "/",
+		"submenu": [
+			{
+				"id": 1,
+				"name": "Home 01",
+				"path": "/",
+				"badge": "NEW"
+			},
+			{
+				"id": 2,
+				"name": "Home 02",
+				"path": "/home-02",
+				"badge": null
+			},
+			{
+				"id": 3,
+				"name": "Home 03",
+				"path": "/home-03",
+				"badge": null
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Pages",
+		"path": "/about",
+		"submenu": [
+			{
+				"id": 1,
+				"name": "About Us",
+				"path": "/about",
+				"badge": null
+			},
+			{
+				"id": 2,
+				"name": "Team",
+				"path": "/team",
+				"badge": null
+			},
+			{
+				"id": 3,
+				"name": "Team Details",
+				"path": "/team/1",
+				"badge": null
+			},
+			{
+				"id": 4,
+				"name": "Faq",
+				"path": "/faq",
+				"badge": null
+			},
+			{
+				"id": 5,
+				"name": "Pricing Page",
+				"path": "/pricing-plan",
+				"badge": null
+			},
+			{
+				"id": 6,
+				"name": "Error 404",
+				"path": "/error",
+				"badge": null
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Services",
+		"path": "/services",
+		"submenu": [
+			{
+				"id": 1,
+				"name": "Services",
+				"path": "/services",
+				"badge": null
+			},
+			{
+				"id": 2,
+				"name": "Services Details",
+				"path": "/services/1",
+				"badge": null
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "Projets",
+		"path": "/portfolios",
+		"submenu": [
+			{
+				"id": 1,
+				"name": "Projects",
+				"path": "/portfolios"
+			},
+			{
+				"id": 2,
+				"name": "Project Details",
+				"path": "/portfolios/1"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"name": "Blog",
+		"path": "/blogs",
+		"submenu": [
+			{
+				"id": 1,
+				"name": "Blog",
+				"path": "/blogs",
+				"badge": "NEW"
+			},
+			{
+				"id": 2,
+				"name": "Blog Details",
+				"path": "/blogs/1",
+				"badge": null
+			}
+		]
+	},
+	{
+		"id": 6,
+		"name": "Contact",
+		"path": "/contact"
+	}
+]

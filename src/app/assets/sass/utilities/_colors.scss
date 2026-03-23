@@ -1,0 +1,80 @@
+/*
+
+metal gradient :
+#6B3E00
+#A46A00
+#C78A1A
+#F0B90B
+#FFD76A
+#FFE29A
+
+
+Deep Black
+#0B0B0B
+
+Charcoal Black
+#121212
+
+Tech Dark
+#1A1A1A
+
+| Usage                | Couleur          | Hex       |
+| -------------------- | ---------------- | --------- |
+| Ombre dorée profonde | Dark Gold Shadow | `#6B3E00` |
+| Or brûlé             | Burnished Gold   | `#A46A00` |
+| Or métallique        | Metallic Gold    | `#C78A1A` |
+| Or riche             | Rich Gold        | `#D9A628` |
+| Or lumineux          | Bright Gold      | `#F0B90B` |
+| Reflet doré          | Golden Highlight | `#FFC94A` |
+| Reflet intense       | Light Gold       | `#FFD76A` |
+| Reflet métallique    | Champagne Gold   | `#FFE29A` |
+
+background: linear-gradient(
+    135deg,
+    #6B3E00,
+    #A46A00,
+    #C78A1A,
+    #F0B90B,
+    #FFD76A,
+    #FFE29A
+);
+ */
+
+
+
+$colors: (
+	common: (
+		white: #F5F5F5,
+		/*blue: #364068,*/
+		black: #000000,
+	),
+	heading: (
+		primary: #ffffff,
+	),
+	text: (
+		body: #9692b2,
+		body-2: #524f66,
+	),
+	theme: (
+		/*primary: #ff007f,*/
+		primary: #FFC94A,
+		/*bg: #18133b,*/
+		bg: #1A1A1A,
+		secondary: #D9A628,
+		/*dark: #060129,*/
+		dark: #0B0B0B,
+		dark-2: #65627a,
+	),
+	white: (
+		2: rgba(255, 255, 255, 0.8),
+	),
+	grey: (
+		1: #9692b2,
+		2: #78758f,
+		3: rgba(150, 146, 178, 0.8),
+	),
+	border: (
+		/*1: #312c52,*/
+		1: #6B3E00,
+	),
+);

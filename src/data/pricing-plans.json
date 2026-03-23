@@ -1,0 +1,59 @@
+[
+	{
+		"type": "Basic",
+		"badge": "50% off",
+		"monthlyPrice": 20,
+		"yearlyPrice": 30,
+		"shortPeriodName": "month",
+		"longPeriodName": "year",
+		"desc": "Specialize in delivering AI-powered solution revolutionize the way businesses.",
+		"buttonName": "Chose Package",
+		"url": "/contact",
+		"features": [
+			"AI-powered tools for businesses",
+			"10 hours of tech support",
+			"Basic data analysis",
+			"Email support",
+			"Access to online resources",
+			"Reporting & Tutorials"
+		]
+	},
+	{
+		"type": "Pro Plan",
+		"badge": "Popular",
+		"monthlyPrice": 60,
+		"yearlyPrice": 90,
+		"shortPeriodName": "month",
+		"longPeriodName": "year",
+		"desc": "Specialize in delivering AI-powered solution revolutionize the way businesses.",
+		"buttonName": "Chose Package",
+		"url": "/contact",
+		"features": [
+			"Everything in the Basic Plan",
+			"Advanced AI solutions",
+			"50 hours of tech support",
+			"Customizable data dashboards",
+			"Priority email & phone",
+			"System optimizations"
+		]
+	},
+	{
+		"type": "Premium",
+		"badge": "Essential",
+		"monthlyPrice": 90,
+		"yearlyPrice": 120,
+		"shortPeriodName": "month",
+		"longPeriodName": "year",
+		"desc": "Specialize in delivering AI-powered solution revolutionize the way businesses.",
+		"buttonName": "Chose Package",
+		"url": "/contact",
+		"features": [
+			"Everything in the Pro Plan",
+			"Tailored AI solutions",
+			"Unlimited tech support",
+			"Real-time analytics",
+			"24/7 priority support",
+			"Full system integration"
+		]
+	}
+]
