@@ -8,9 +8,19 @@ interface PropType {
 }
 const BlogDetailsMain = ({ currentItemId }: PropType) => {
 	const items = getBlogs();
+
 	const currentId = currentItemId;
-	const { prevId, nextId, currentItem, isPrevItem, isNextItem } =
-		getPreviousNextItem({ items, currentId });
+
+	const {
+		prevId,
+		nextId,
+		prevSlug,
+		nextSlug,
+		currentItem,
+		isPrevItem,
+		isNextItem
+	} = getPreviousNextItem({ items, currentId });
+
 	const { title } = currentItem || {};
 	return (
 		<div>
@@ -24,6 +34,8 @@ const BlogDetailsMain = ({ currentItemId }: PropType) => {
 					currentId,
 					prevId,
 					nextId,
+					prevSlug,
+					nextSlug,
 					isPrevItem,
 					isNextItem,
 				}}

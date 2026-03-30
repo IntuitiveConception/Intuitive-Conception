@@ -33,8 +33,8 @@ export interface ServiceType {
 	faqTitle: string;
 	faq: FaqItem[];
 }
-const getALlServices = () => {
-	return services;
+const getALlServices = (): ServiceType[] => {
+	return services as ServiceType[];
 };
 
 export default getALlServices;

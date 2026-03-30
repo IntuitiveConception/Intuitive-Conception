@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /_not-found
+Disallow: /error
+
+# Sitemap
+Sitemap: https://www.intuitive-conception.com/sitemap.xml

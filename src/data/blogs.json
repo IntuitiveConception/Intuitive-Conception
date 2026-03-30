@@ -2,6 +2,7 @@
 	{
 		"id": 1,
 		"title": "Unlocking the Power of Data for Business Success.",
+		"slug": "unlocking",
 		"img": "/images/blog/blog-1.webp",
 		"smallImg": "/images/blog/post-1.webp",
 		"desc": "In today’s data-driven world, businesses that harness the power of data are positioned to thrive. Data has become more than just numbers—it’s a valuable asset that can drive decision-making, improve operations, and create new opportunities. The challenge lies in how businesses extract actionable insights from vast amounts of data and use it to their advantage. Data enables businesses to make informed decisions based on evidence rather than guesswork. By analyzing patterns and trends, Data enables businesses to make informed decisions based on evidence.",
@@ -17,6 +18,7 @@
 	{
 		"id": 2,
 		"title": "The Future Work: Embracing Digital Transformation.",
+		"slug": "future-work",
 		"img": "/images/blog/blog-2.webp",
 		"smallImg": "/images/blog/post-2.webp",
 		"desc": "In today’s data-driven world, businesses that harness the power of data are positioned to thrive. Data has become more than just numbers—it’s a valuable asset that can drive decision-making, improve operations, and create new opportunities. The challenge lies in how businesses extract actionable insights from vast amounts of data and use it to their advantage. Data enables businesses to make informed decisions based on evidence rather than guesswork. By analyzing patterns and trends, Data enables businesses to make informed decisions based on evidence.",
@@ -32,6 +34,7 @@
 	{
 		"id": 3,
 		"title": "How AI Revolutionizing Business and Industry Today.",
+		"slug": "ai-revolution",
 		"img": "/images/blog/blog-4.webp",
 		"smallImg": "/images/blog/post-3.webp",
 		"desc": "In today’s data-driven world, businesses that harness the power of data are positioned to thrive. Data has become more than just numbers—it’s a valuable asset that can drive decision-making, improve operations, and create new opportunities. The challenge lies in how businesses extract actionable insights from vast amounts of data and use it to their advantage. Data enables businesses to make informed decisions based on evidence rather than guesswork. By analyzing patterns and trends, Data enables businesses to make informed decisions based on evidence.",
@@ -47,6 +50,7 @@
 	{
 		"id": 4,
 		"title": "The Role of AI in Everyday Life and Business Growth In today’s data.",
+		"slug": "role-of-ai",
 		"img": "/images/blog/blog-8.webp",
 		"smallImg": "/images/blog/post-1.webp",
 		"desc": "In today’s data-driven world, businesses that harness the power of data are positioned to thrive. Data has become more than just numbers—it’s a valuable asset that can drive decision-making, improve operations, and create new opportunities. The challenge lies in how businesses extract actionable insights from vast amounts of data and use it to their advantage. Data enables businesses to make informed decisions based on evidence rather than guesswork. By analyzing patterns and trends, Data enables businesses to make informed decisions based on evidence.",
@@ -62,6 +66,7 @@
 	{
 		"id": 5,
 		"title": "AI Powered Customer Service in Age of Automation.",
+		"slug": "ai-powered",
 		"img": "/images/blog/blog-9.webp",
 		"smallImg": "/images/blog/post-1.webp",
 		"desc": "In today’s data-driven world, businesses that harness the power of data are positioned to thrive. Data has become more than just numbers—it’s a valuable asset that can drive decision-making, improve operations, and create new opportunities. The challenge lies in how businesses extract actionable insights from vast amounts of data and use it to their advantage. Data enables businesses to make informed decisions based on evidence rather than guesswork. By analyzing patterns and trends, Data enables businesses to make informed decisions based on evidence.",
@@ -77,6 +82,7 @@
 	{
 		"id": 6,
 		"title": "Boosting Team Efficiency with AI Workflow Tools.",
+		"slug": "boosting",
 		"img": "/images/blog/blog-10.webp",
 		"smallImg": "/images/blog/post-1.webp",
 		"desc": "In today’s data-driven world, businesses that harness the power of data are positioned to thrive. Data has become more than just numbers—it’s a valuable asset that can drive decision-making, improve operations, and create new opportunities. The challenge lies in how businesses extract actionable insights from vast amounts of data and use it to their advantage. Data enables businesses to make informed decisions based on evidence rather than guesswork. By analyzing patterns and trends, Data enables businesses to make informed decisions based on evidence.",

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      <url>
+        <loc>https://www.intuitive-conception.com/mentions-legales</loc>
+      </url>
+      <url>
+        <loc>https://www.intuitive-conception.com/portfolios</loc>
+      </url>
+      <url>
+        <loc>https://www.intuitive-conception.com/services</loc>
+      </url>
+
+      <!-- Portfolios dynamiques -->
+      <url>
+        <loc>https://www.intuitive-conception.com/portfolios/application-job-board</loc>
+      </url>
+      <url>
+        <loc>https://www.intuitive-conception.com/portfolios/application-bilan-personnel</loc>
+      </url>
+      <url>
+        <loc>https://www.intuitive-conception.com/portfolios/application-portfolio</loc>
+      </url>
+      <url>
+        <loc>https://www.intuitive-conception.com/portfolios/application-automate</loc>
+      </url>
+
+      <!-- Services dynamiques -->
+      <url>
+        <loc>https://www.intuitive-conception.com/services/audit-maquette</loc>
+      </url>
+      <url>
+        <loc>https://www.intuitive-conception.com/services/developpement-modulaire</loc>
+      </url>
+      <url>
+        <loc>https://www.intuitive-conception.com/services/infrastructure-cloud-aws</loc>
+      </url>
+      <url>
+        <loc>https://www.intuitive-conception.com/services/maintenance-support</loc>
+      </url>
+
+</urlset>

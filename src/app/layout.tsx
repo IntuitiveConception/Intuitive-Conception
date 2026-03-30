@@ -29,8 +29,17 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-	title: "Agence de développement web en Nouvelle-Calédonie | Intuitive Conception",
-	description: "Agence web en Nouvelle-Calédonie. Développement d’applications sur mesure avec Django, React et AWS. Donnez vie à votre projet digital.",
+	metadataBase: new URL("https://www.intuitive-conception.com"),
+	title: "Agence de développement web à Nouméa – Applications sur mesure en Nouvelle-Calédonie | Intuitive Conception",
+	description: "Agence de développement web à Nouméa. Création d’applications web sur mesure, outils métiers et solutions SaaS en Nouvelle-Calédonie. Automatisez vos processus et accélérez votre croissance.",
+	openGraph: {
+		title: "Agence de développement web à Nouméa",
+		description: "Applications web sur mesure en Nouvelle-Calédonie",
+		url: "https://www.intuitive-conception.com",
+		siteName: "Intuitive Conception",
+		locale: "fr_FR",
+		type: "website",
+	},
 };
 
 export default function RootLayout({
@@ -46,7 +55,7 @@ export default function RootLayout({
 					dangerouslySetInnerHTML={{
 						__html: JSON.stringify({
 							"@context": "https://schema.org",
-							"@type": "LocalBusiness",
+							"@type": "WebDevelopmentCompany",
 							"name": "Intuitive Conception",
 							"image": "https://www.intuitive-conception.com/images/logos/IC_logo.png",
 							"url": "https://www.intuitive-conception.com",
@@ -63,7 +72,32 @@ export default function RootLayout({
 							},
 							"description": "Agence de développement web spécialisée en applications sur mesure avec Django, React et AWS en Nouvelle-Calédonie.",
 							"priceRange": "$$",
-							"openingHours": "Mo-Fr 08:00-17:00",
+							"openingHoursSpecification": [
+								{
+									"@type": "OpeningHoursSpecification",
+									"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+									"opens": "08:00",
+									"closes": "17:00"
+								}
+							],
+							"founder": {
+								"@type": "Person",
+								"name": "Sébastien GENTY"
+							},
+							"makesOffer": [
+								{
+									"@type": "Service",
+									"name": "Développement d'applications web sur mesure"
+								},
+								{
+									"@type": "Service",
+									"name": "Automatisation de processus métier"
+								},
+								{
+									"@type": "Service",
+									"name": "Développement SaaS"
+								}
+							]
 						}),
 					}}
 				/>

@@ -2,6 +2,7 @@ import blogs from "@/data/blogs.json";
 export interface BlogType {
 	id: number;
 	title: string;
+	slug: string;
 	img: string;
 	smallImg: string;
 	desc: string;
@@ -14,8 +15,8 @@ export interface BlogType {
 	author: string | undefined;
 	totalComment: number;
 }
-const getBlogs = () => {
-	return blogs;
+const getBlogs = (): BlogType[] => {
+	return blogs as BlogType[];
 };
 
 export default getBlogs;
