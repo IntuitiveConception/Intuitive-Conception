@@ -2,7 +2,9 @@ import portfolio from "@/data/portfolio.json";
 export interface PortfolioType {
 	id: number | string;
 	title: string;
+	slug: string;
 	title2: string;
+	altImg: string;
 	img: string;
 	img2: string;
 	desc: string;

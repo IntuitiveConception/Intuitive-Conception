@@ -17,7 +17,7 @@ const Logo: FC<LogoProps> = ({ headerType, isStickyHeader }) => {
 			<Link className="logo" href="/">
 				<Image
 					src={logoSrc}
-					alt="Logo"
+					alt="Intuitive Conception – Agence de développement web en Nouvelle-Calédonie"
 					width={636}
 					height={154}
 					className="logo-img"

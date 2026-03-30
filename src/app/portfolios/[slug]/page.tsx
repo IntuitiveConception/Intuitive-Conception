@@ -1,34 +1,36 @@
 import Footer from "@/components/layout/footer/Footer";
 import Header from "@/components/layout/header/Header";
-import ServiceDetailsMain from "@/components/layout/main/ServiceDetailsMain";
+import PortfolioDetailsMain from "@/components/layout/main/PortfolioDetailsMain";
+import Cta from "@/components/sections/cta/Cta";
 import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
-import getALlServices, { ServiceType } from "@/libs/getALlServices";
+import getPortfolio, { PortfolioType } from "@/libs/getPortfolio";
 import { notFound } from "next/navigation";
 
 // Load team items
-const items: ServiceType[] = getALlServices();
+const items: PortfolioType[] = getPortfolio();
 
 // ------------------------------
 // TYPES
 // ------------------------------
 interface PropsType {
 	params: {
-		id: string;
+		slug: string;
 	};
 }
 
 // ------------------------------
 // PAGE COMPONENT
 // ------------------------------
-export default async function ServiceDetails({ params }: PropsType) {
-	const { id } = await params;
-	const currentId = Number(id);
-	const item = items.find(item => item.id === currentId);
+export default async function PortfolioDetails({ params }: PropsType) {
+	const { slug } = await params;
+	const item = items.find(item => item.slug === slug);
 
 	if (!item) {
 		notFound();
 	}
+
+	const currentId = Number(item.id);
 
 	return (
 		<div>
@@ -38,7 +40,7 @@ export default async function ServiceDetails({ params }: PropsType) {
 					<div className="top-gap-20"></div>
 					<Header headerType={2} isNotAbsolute={true} />
 					<main>
-						<ServiceDetailsMain currentItemId={currentId} />
+						<PortfolioDetailsMain currentItemId={currentId} />
 					</main>
 					<Footer />
 					<div className="bottom-gap-30"></div>
@@ -54,7 +56,7 @@ export default async function ServiceDetails({ params }: PropsType) {
 // STATIC PARAMS
 // ------------------------------
 export async function generateStaticParams() {
-	return items.map(({ id = 0 }) => ({
-		id: id.toString(),
+	return items.map(({ slug }) => ({
+		slug,
 	}));
 }

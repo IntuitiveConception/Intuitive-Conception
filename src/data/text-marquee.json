@@ -1,50 +1,50 @@
 [
-	{
-		"title": "Redefining",
-		"img": "tji-marquee-icon"
-	},
-	{
-		"title": "Revolution",
-		"img": "tji-marquee-icon"
-	},
-	{
-		"title": "Intelligence",
-		"img": "tji-marquee-icon"
-	},
-	{
-		"title": "Redefining",
-		"img": "tji-marquee-icon"
-	},
-	{
-		"title": "Redefining",
-		"img": "tji-marquee-icon"
-	},
-	{
-		"title": "Revolution",
-		"img": "tji-marquee-icon"
-	},
-	{
-		"title": "Intelligence",
-		"img": "tji-marquee-icon"
-	},
-	{
-		"title": "Redefining",
-		"img": "tji-marquee-icon"
-	},
-	{
-		"title": "Redefining",
-		"img": "tji-marquee-icon"
-	},
-	{
-		"title": "Revolution",
-		"img": "tji-marquee-icon"
-	},
-	{
-		"title": "Intelligence",
-		"img": "tji-marquee-icon"
-	},
-	{
-		"title": "Redefining",
-		"img": "tji-marquee-icon"
-	}
+  {
+    "title": "Django",
+    "img": "tji-marquee-icon"
+  },
+  {
+    "title": "Django REST Framework",
+    "img": "tji-marquee-icon"
+  },
+  {
+    "title": "Next.js",
+    "img": "tji-marquee-icon"
+  },
+  {
+    "title": "React",
+    "img": "tji-marquee-icon"
+  },
+  {
+    "title": "Applications Web sur mesure",
+    "img": "tji-marquee-icon"
+  },
+  {
+    "title": "API REST",
+    "img": "tji-marquee-icon"
+  },
+  {
+    "title": "Architecture scalable",
+    "img": "tji-marquee-icon"
+  },
+  {
+    "title": "AWS Cloud",
+    "img": "tji-marquee-icon"
+  },
+  {
+    "title": "Déploiement Cloud",
+    "img": "tji-marquee-icon"
+  },
+  {
+    "title": "Automatisation métier",
+    "img": "tji-marquee-icon"
+  },
+  {
+    "title": "Applications SaaS",
+    "img": "tji-marquee-icon"
+  },
+  {
+    "title": "Performance web",
+    "img": "tji-marquee-icon"
+  }
 ]

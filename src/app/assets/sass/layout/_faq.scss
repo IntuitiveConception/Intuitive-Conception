@@ -26,6 +26,12 @@ START: Faq CSS
 		}
 	}
 }
+
+.faq-h2 {
+	color: var(--tj-common-white);
+	font-size: 1vw;
+}
+
 .faq-img {
 	max-width: 480px;
 	width: 100%;

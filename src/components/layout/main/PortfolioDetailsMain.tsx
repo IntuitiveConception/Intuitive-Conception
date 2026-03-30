@@ -7,11 +7,21 @@ interface PropType {
 	currentItemId: number;
 }
 const PortfolioDetailsMain = ({ currentItemId }: PropType) => {
-	const items = getPortfolio()?.slice(0, 4);
+	const items = getPortfolio();
 	const currentId = currentItemId;
-	const { prevId, nextId, currentItem, isPrevItem, isNextItem } =
-		getPreviousNextItem({ items, currentId });
+
+	const {
+		prevId,
+		nextId,
+		prevSlug,
+		nextSlug,
+		currentItem,
+		isPrevItem,
+		isNextItem
+	} = getPreviousNextItem({ items, currentId });
+
 	const { category } = currentItem || {};
+
 	return (
 		<div>
 			<HeroInner
@@ -24,6 +34,8 @@ const PortfolioDetailsMain = ({ currentItemId }: PropType) => {
 					currentId,
 					prevId,
 					nextId,
+					prevSlug,
+					nextSlug,
 					isPrevItem,
 					isNextItem,
 				}}

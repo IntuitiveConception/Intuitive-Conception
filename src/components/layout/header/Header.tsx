@@ -64,7 +64,6 @@ const Header: FC<HeaderProps> = ({
 	return (
 		<Fragment>
 			<header className={headerClasses}>
-				{isHeaderTop && <HeaderTop type={headerTopType} />}
 				<div className="header-bottom">
 					<div className="container-fluid">
 						<div className="row">
@@ -81,13 +80,6 @@ const Header: FC<HeaderProps> = ({
 
 									{/* Header right */}
 									<div className="header-right-item d-none d-lg-inline-flex">
-										{/*
-											<div className="header-search">
-												<button className="search" onClick={openSearch}>
-													<i className="tji-search"></i> Search
-												</button>
-											</div>
-										*/}
 										{headerType === 3 && (
 											<div
 												className="menu_bar menu_offcanvas d-lg-inline-flex d-none"

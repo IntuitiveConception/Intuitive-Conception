@@ -1,8 +1,6 @@
 "use client";
 import FaqCommon from "@/components/shared/faq/FaqCommon";
-import PrevNextNav, {
-	OptionType,
-} from "@/components/shared/others/PrevNextNav";
+import PrevNextNav, {OptionType} from "@/components/shared/others/PrevNextNav";
 import { ServiceType } from "@/libs/getALlServices";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,26 +11,36 @@ interface PropType {
 	items: ServiceType[];
 	currentItem: ServiceType;
 }
+
 const ServicesDetailsPrimary = ({ option, items, currentItem }: PropType) => {
 	const { currentId } = option || {};
+
 	const {
 		img2 = "/images/service/service-details-1.webp",
 		img3 = "/images/service/service-details-1.webp",
 		img4 = "/images/service/service-details-1.webp",
 		title,
+		SEOTitle,
 		desc,
+		subTitle,
 		sub1,
 		sub2,
 		sub3,
+		descTitle2,
+		descTitle3,
+		descTitle4,
 		desc2,
 		desc3,
 		desc4,
 		subDesc1,
 		subDesc2,
 		subDesc3,
+		faqTitle,
 		faq
 	} = currentItem || {};
+
 	const sidebarItems = items?.slice(0, 4);
+
 	return (
 		<section className="tj-blog-section section-gap">
 			<div className="container">
@@ -45,16 +53,18 @@ const ServicesDetailsPrimary = ({ option, items, currentItem }: PropType) => {
 									height={450}
 									style={{ height: "auto" }}
 									src={img2}
-									alt="Images"
+									alt={`${sub1} pour application web en Nouvelle-Calédonie`}
 								/>
 							</div>
-							<h2 className="title">
-								{title}
-							</h2>
+							<h1 className="service-detail-SEOTitle">
+								{SEOTitle}
+							</h1>
 							<div className="blog-text">
+								<h2 className="service-detail-h2">{descTitle2}</h2>
 								<p>
 									{desc2}
 								</p>
+								<h2 className="service-detail-h2">{descTitle3}</h2>
 								<p>
 									{desc3}
 								</p>
@@ -88,7 +98,7 @@ const ServicesDetailsPrimary = ({ option, items, currentItem }: PropType) => {
 													height={420}
 													style={{ height: "auto" }}
 													src={img3}
-													alt="Image"
+													alt={`${sub2} pour application web en Nouvelle-Calédonie`}
 												/>
 											</div>
 										</div>
@@ -99,22 +109,23 @@ const ServicesDetailsPrimary = ({ option, items, currentItem }: PropType) => {
 													height={420}
 													style={{ height: "auto" }}
 													src={img4}
-													alt="Image"
+													alt={`${sub3} pour application web en Nouvelle-Calédonie`}
 												/>
 											</div>
 										</div>
 									</div>
 								</div>
-								<h3>{desc}</h3>
+								<h2 className="service-detail-h2">{descTitle4}</h2>
 								<p>
 									{desc4}
 								</p>
 								<div className="details-content-box">
+									<h2 className="service-detail-h2">{subTitle}</h2>
 									<div className="service-details-item">
 										<span className="number">01.</span>
-										<h6 className="title">
+										<h3 className="service-detail-h3">
 											{sub1}
-										</h6>
+										</h3>
 										<div className="desc">
 											<p>
 												{subDesc1}
@@ -124,9 +135,9 @@ const ServicesDetailsPrimary = ({ option, items, currentItem }: PropType) => {
 									<div className="service-details-item">
 										<div className="service-number">
 											<span className="number">02.</span>
-											<h6 className="title">
+											<h3 className="service-detail-h3">
 												{sub2}
-											</h6>
+											</h3>
 											<div className="desc">
 												<p>
 													{subDesc2}
@@ -137,9 +148,9 @@ const ServicesDetailsPrimary = ({ option, items, currentItem }: PropType) => {
 									<div className="service-details-item">
 										<div className="service-number">
 											<span className="number">03.</span>
-											<h6 className="title">
+											<h3 className="service-detail-h3">
 												{sub3}
-											</h6>
+											</h3>
 											<div className="desc">
 												<p>
 													{subDesc3}
@@ -148,7 +159,7 @@ const ServicesDetailsPrimary = ({ option, items, currentItem }: PropType) => {
 										</div>
 									</div>
 								</div>
-								<h3>Frequently asked questions</h3>
+								<h2 className="service-detail-h2">{faqTitle}</h2>
 								<FaqCommon items={faq}/>
 							</div>
 							<PrevNextNav option={option} itemsUrl="/services" />
@@ -160,11 +171,11 @@ const ServicesDetailsPrimary = ({ option, items, currentItem }: PropType) => {
 								<h4 className="widget-title">Nos Services</h4>
 								<ul>
 									{sidebarItems?.length
-										? sidebarItems?.map(({ title, id }, idx) => (
+										? sidebarItems?.map(({ title, id, slug }, idx) => (
 												<li key={idx}>
 													<Link
 														className={`${currentId === id ? "active" : ""}`}
-														href={`/services/${id}`}
+														href={`/services/${slug}`}
 													>
 														{title}
 														<span className="icon">

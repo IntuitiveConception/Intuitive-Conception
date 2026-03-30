@@ -1,28 +1,19 @@
 import Link from "next/link";
+import getALlServices from "@/libs/getALlServices";
 
 const FooterServiceNavs = () => {
+
+	const items = getALlServices()?.slice(0, 4);
+
 	return (
 		<ul>
-			<li>
-				<Link href="/services/1">Audit & Maquette</Link>
-			</li>
-			<li>
-				<Link href="/services/2">Développement Modulaire</Link>
-			</li>
-			<li>
-				<Link href="/services/3">Infrastructure Cloud & Déploiement</Link>
-			</li>
-			<li>
-				<Link href="/services/4">Maintenance & Support</Link>
-			</li>
-			{/*
-			<li>
-				<Link href="/services/5"></Link>
-			</li>
-			<li>
-				<Link href="/services/6"></Link>
-			</li>
-			*/}
+			{items.map(item => {
+				return (
+					<li key={item.id}>
+						<Link href={`/services/${item.slug}`}>{item.title}</Link>
+					</li>
+				)
+			})}
 		</ul>
 	);
 };

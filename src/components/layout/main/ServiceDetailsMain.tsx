@@ -6,12 +6,25 @@ import getPreviousNextItem from "@/libs/getPreviousNextItem";
 interface PropType {
 	currentItemId: number;
 }
+
 const ServiceDetailsMain = ({ currentItemId }: PropType) => {
 	const items = getALlServices();
+
 	const currentId = currentItemId;
-	const { prevId, nextId, currentItem, isPrevItem, isNextItem } =
-		getPreviousNextItem({ items, currentId });
+
+	const {
+		prevId,
+		nextId,
+		prevSlug,
+		nextSlug,
+		currentItem,
+		isPrevItem,
+		isNextItem
+	} = getPreviousNextItem({ items, currentId });
+
+
 	const { title } = currentItem || {};
+
 	return (
 		<div>
 			<HeroInner
@@ -24,6 +37,8 @@ const ServiceDetailsMain = ({ currentItemId }: PropType) => {
 					currentId,
 					prevId,
 					nextId,
+					prevSlug,
+					nextSlug,
 					isPrevItem,
 					isNextItem,
 				}}

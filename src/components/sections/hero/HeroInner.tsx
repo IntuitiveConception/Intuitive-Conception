@@ -25,7 +25,7 @@ const HeroInner: FC<HeroInnerPropType> = ({
 				<div className="row">
 					<div className="col-lg-12">
 						<div className="tj-page-header-content text-center">
-							<h1 className="tj-page-title">{title}</h1>
+							<p className="tj-page-title h1">{title}</p>
 							<div className="tj-page-link">
 								<span>
 									<i className="tji-home"></i>

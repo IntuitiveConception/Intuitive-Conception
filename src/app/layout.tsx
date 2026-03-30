@@ -29,8 +29,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-	title: "Intuitive Conception - Agence de développement informatique",
-	description: "Conceptions d'applications web.",
+	title: "Agence de développement web en Nouvelle-Calédonie | Intuitive Conception",
+	description: "Agence web en Nouvelle-Calédonie. Développement d’applications sur mesure avec Django, React et AWS. Donnez vie à votre projet digital.",
 };
 
 export default function RootLayout({
@@ -41,6 +41,32 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${poppins.variable} ${roboto.variable}`}>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify({
+							"@context": "https://schema.org",
+							"@type": "LocalBusiness",
+							"name": "Intuitive Conception",
+							"image": "https://www.intuitive-conception.com/images/logos/IC_logo.png",
+							"url": "https://www.intuitive-conception.com",
+							"telephone": "+687805423",
+							"address": {
+								"@type": "PostalAddress",
+								"addressLocality": "Nouméa",
+								"addressRegion": "Nouvelle-Calédonie",
+								"addressCountry": "NC"
+							},
+							"areaServed": {
+								"@type": "AdministrativeArea",
+								"name": "Nouvelle-Calédonie"
+							},
+							"description": "Agence de développement web spécialisée en applications sur mesure avec Django, React et AWS en Nouvelle-Calédonie.",
+							"priceRange": "$$",
+							"openingHours": "Mo-Fr 08:00-17:00",
+						}),
+					}}
+				/>
 				{children}
 			</body>
 		</html>

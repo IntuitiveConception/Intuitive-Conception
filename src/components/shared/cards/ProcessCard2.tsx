@@ -24,7 +24,7 @@ const ProcessCard2 = ({ item, idx = 0 }: PropType) => {
 					</span>
 				</div>
 				<div className="process-content">
-					<h4 className="title">{title}</h4>
+					<h3 className="process-card-h3">{title}</h3>
 					<p className="desc">{desc}</p>
 				</div>
 				<div className="process-step">

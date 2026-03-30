@@ -288,9 +288,11 @@ START: Theme Header CSS
 		display: inline-block;
 		max-width: 160px;
 		width: 100%;
+		margin-top: 1vw;
 	}
 	.logo-img {
 		height: auto;
+		width: 60%;
 		@media #{$xs, $xxs, $md} {
 			width: 50%;
 			height: auto;
@@ -607,9 +609,11 @@ START: Theme Header CSS
 		.menu-area {
 			background-color: var(--tj-color-theme-dark);
 			padding: 0 36px;
+			/*
 			border-radius: 0 0 24px 24px;
 			border: 1px solid #364068;
 			border-top-color: transparent;
+			*/
 			position: relative;
 			&::before,
 			&::after {
@@ -621,12 +625,14 @@ START: Theme Header CSS
 				width: 48px;
 				height: 24px;
 				box-shadow: 24px 0 0 0 var(--tj-color-theme-dark);
+				/*
 				border-radius: 0 24px 0 0;
 				border-top: 1px solid #364068;
 				border-right: 1px solid #364068;
 				@media #{$md, $sm, $xs} {
 					border-radius: 0 16px 0 0;
 				}
+				*/
 			}
 			&::after {
 				left: auto;

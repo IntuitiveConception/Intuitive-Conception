@@ -1,9 +1,11 @@
 import Footer from "@/components/layout/footer/Footer";
 import Header from "@/components/layout/header/Header";
 import About3 from "@/components/sections/about/About3";
-import Blogs3 from "@/components/sections/blogs/Blogs3";
+import About1 from "@/components/sections/about/About1";
+import About2 from "@/components/sections/about/About2";
+import Blogs3 from "@/components/sections/blogs/Blogs1";
 import Brands1 from "@/components/sections/brands/Brands1";
-import Hero3 from "@/components/sections/hero/Hero3";
+import Hero from "@/components/sections/hero/Hero3";
 import Portfolios3 from "@/components/sections/portfolios/Portfolios3";
 import PricingPlan2 from "@/components/sections/pricing-plan/PricingPlan2";
 import Process2 from "@/components/sections/process/Process2";
@@ -15,10 +17,11 @@ import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 export default function Faq() {
 	return (
 		<div>
-			<Header isStickyHeader={true} headerType={3} isCasvas={true} />
+			{/*<Header isStickyHeader={true} headerType={3} isCasvas={true} />*/}
+			{/*id="smooth-wrapper"*/}
 			<div id="smooth-wrapper">
+				{/*id="smooth-content"*/}
 				<div id="smooth-content">
-					<div className="top-gap-75"></div>
 					<Header
 						headerType={3}
 						isHeaderTop={true}
@@ -26,14 +29,16 @@ export default function Faq() {
 						isCasvas={true}
 					/>
 					<main>
-						<Hero3 />
-						{/*<Brands1 />*/}
+						<Hero />
+						<About1/>
 						<Process2 />
 						<About3 />
+						<About2 />
+						{/*<PricingPlan2 />*/}
 						<Services3 />
 						<Portfolios3 />
 						{/*<Testimonials3 />*/}
-						{/*<PricingPlan2 />*/}
+						{/*<Brands1 />*/}
 						{/*<Blogs3 />*/}
 					</main>
 					<Footer />

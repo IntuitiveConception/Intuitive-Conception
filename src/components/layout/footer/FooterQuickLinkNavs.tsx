@@ -4,7 +4,7 @@ const FooterQuickLinkNavs = () => {
 	return (
 		<ul>
 			<li>
-				<Link href="/">Home</Link>
+				<Link href="/">Accueil</Link>
 			</li>
 			{/*}
 			<li>
@@ -20,7 +20,7 @@ const FooterQuickLinkNavs = () => {
 			</li>
 			*/}
 			<li>
-				<Link href="/portfolios">Portfolio</Link>
+				<Link href="/portfolios">Projets</Link>
 			</li>
 			<li>
 				<Link href="/contact">Contact</Link>

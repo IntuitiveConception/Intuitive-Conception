@@ -32,7 +32,7 @@ const MobileNavbar = () => {
 						<ul>
 							{/* Home Menu */}
 							<MobileMenuItem
-								text={homeNav?.name ?? "Home"}
+								text={homeNav?.name ?? "Accueil"}
 								url={homeNav?.path ?? "#"}
 							>
 							</MobileMenuItem>
@@ -65,7 +65,7 @@ const MobileNavbar = () => {
 
 							{/* Portfolio Menu */}
 							<MobileMenuItem
-								text={portfolioNav?.name ?? "Portfolio"}
+								text={portfolioNav?.name ?? "Projets"}
 								url={portfolioNav?.path ?? "#"}
 							>
 							</MobileMenuItem>

@@ -14,8 +14,8 @@ const Services3 = () => {
 							<span className="sub-title wow fadeInUp" data-wow-delay="0.3s">
 								<i className="tji-subtitle-2"></i>Nos services
 							</span>
-							<h2 className="sec-title text-anim">Ce que nous mettons à votre dispositon</h2>
 						</div>
+						<h2 className="sec-title service-3-h2">Nos services de développement d&#39;applications web</h2>
 					</div>
 				</div>
 				<div className="row">

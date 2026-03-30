@@ -20,6 +20,7 @@ const Services4 = () => {
 	return (
 		<section className="tj-service-section-2 section-gap">
 			<div className="container">
+				<h1 className='service-detail-SEOTitle text-center'>Nos services dédiés à la conception d&#39;applications web en Nouvelle-Calédonie</h1>
 				<div className="row row-gap-4">
 					{currentItems?.length
 						? currentItems?.map((item, idx) => (

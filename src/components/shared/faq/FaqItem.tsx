@@ -1,14 +1,19 @@
 "use client";
+
+
 export interface FaqItemType {
 	title: string;
 	desc: string;
 	initActive: boolean;
 }
+
 interface FaqItemPropType {
 	item: FaqItemType;
 	idx: number;
 }
+
 const FaqItem = ({ item, idx = 0 }: FaqItemPropType) => {
+
 	const { title, desc, initActive } = item;
 
 	return (
@@ -20,7 +25,7 @@ const FaqItem = ({ item, idx = 0 }: FaqItemPropType) => {
 				data-bs-target={`#faq-${idx + 1}`}
 				aria-expanded={initActive ? true : false}
 			>
-				{title}
+				<h2 className='faq-h2'>{title}</h2>
 			</button>
 			<div
 				id={`faq-${idx + 1}`}

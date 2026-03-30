@@ -7,6 +7,8 @@ export interface OptionType {
 	isNextItem: boolean;
 	prevId: number;
 	nextId: number;
+	prevSlug: string;
+	nextSlug: string;
 }
 interface PropType {
 	option: OptionType;
@@ -14,7 +16,7 @@ interface PropType {
 	type?: number;
 }
 const PrevNextNav = ({ option, itemsUrl = "/services", type }: PropType) => {
-	const { isPrevItem, prevId, isNextItem, nextId } = option || {};
+	const { isPrevItem, prevId, prevSlug, isNextItem, nextId, nextSlug } = option || {};
 	return (
 		<div className={`tj-post__navigation${type === 2 ? "" : " mb-0"}`}>
 			{/* <!-- previous post --> */}
@@ -23,7 +25,7 @@ const PrevNextNav = ({ option, itemsUrl = "/services", type }: PropType) => {
 				style={{ visibility: isPrevItem ? "visible" : "hidden" }}
 			>
 				<div className="tj-nav-post__nav prev_post">
-					<Link href={isPrevItem ? `${itemsUrl}/${prevId}` : "#"}>
+					<Link href={isPrevItem ? `${itemsUrl}/${prevSlug}` : "#"}>
 						<span>
 							<i className="tji-arrow-left"></i>
 						</span>
@@ -42,7 +44,7 @@ const PrevNextNav = ({ option, itemsUrl = "/services", type }: PropType) => {
 				style={{ visibility: isNextItem ? "visible" : "hidden" }}
 			>
 				<div className="tj-nav-post__nav next_post">
-					<Link href={isNextItem ? `${itemsUrl}/${nextId}` : "#"}>
+					<Link href={isNextItem ? `${itemsUrl}/${nextSlug}` : "#"}>
 						Next
 						<span>
 							<i className="tji-arrow-right"></i>

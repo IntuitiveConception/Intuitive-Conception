@@ -7,17 +7,16 @@ import Link from "next/link";
 const About3 = () => {
 	return (
 		<section className="tj-about-section-3 section-gap">
-			<div className="container">
-				<div className="row">
+			<div className="container-fluid p-lg-5">
+				<div className="row about-3-row">
 					<div className="col-lg-7">
 						<div className="about-content-area style-3">
 							<div className="sec-heading style-3">
 								<span className="sub-title wow fadeInUp" data-wow-delay=".3s">
 									<i className="tji-subtitle-2"></i>Notre objectif
 								</span>
-								<h2 className="sec-title title-highlight">
-									Innover grâce à notre expertise et à nos technologies,
-									fournir des solutions optimisées qui transforment les entreprises.
+								<h2 className="sec-title ">
+									Concevoir des applications web qui transforment les entreprises en Nouvelle-Calédonie.
 								</h2>
 							</div>
 							<div className="about-bottom-area-3">
@@ -43,7 +42,7 @@ const About3 = () => {
 							</div>
 						</div>
 					</div>
-					<div className="col-lg-5">
+					<div className="col-lg-5 ">
 						<div className="about-img-area-2">
 							<div
 								className="about-img wow fadeInLeft"
@@ -54,7 +53,7 @@ const About3 = () => {
 									width={768}
 									height={1029}
 									src="/images/about/ai-about-1.png"
-									alt="Image"
+									alt="Développement d'applications"
 								/>
 							</div>
 							{/*}

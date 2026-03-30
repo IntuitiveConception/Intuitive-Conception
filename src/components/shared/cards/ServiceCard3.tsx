@@ -11,6 +11,8 @@ interface PropType {
 const ServiceCard3 = ({ item, idx = 0, lastIteme }: PropType) => {
 	const {
 		title,
+		SEOTitle,
+		slug,
 		desc,
 		id,
 		img = "/images/service/service-1.webp",
@@ -28,7 +30,7 @@ const ServiceCard3 = ({ item, idx = 0, lastIteme }: PropType) => {
 			<div className="service-inner">
 				<div className="service-content">
 					<h3 className="title">
-						<Link href={`/services/${id}`}>{title}</Link>
+						<Link href={`/services/${slug}`}>{title}</Link>
 					</h3>
 					<p className="desc">{desc}</p>
 					<ul className="list-style-2">
@@ -36,10 +38,10 @@ const ServiceCard3 = ({ item, idx = 0, lastIteme }: PropType) => {
 						<li>{sub2}</li>
 						<li>{sub3}</li>
 					</ul>
-					<ButtonPrimary text="Plus" url={`/services/${id}`} />
+					<ButtonPrimary text="En savoir plus" url={`/services/${slug}`} />
 				</div>
 				<div className="service-img">
-					<Image width={490} height={360} src={img} alt="Image" />
+					<Image width={490} height={360} src={img} alt={SEOTitle} />
 				</div>
 			</div>
 			<span className="item-count">{modifyNumber(idx + 1)}.</span>

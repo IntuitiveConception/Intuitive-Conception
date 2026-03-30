@@ -11,42 +11,44 @@ const Process2 = () => {
 		{
 			id: 2,
 			iconName: "tji-development",
-			title: "Développement & Intégration",
+			title: "Développement & tests",
 			desc: "Conception agile, remises régulières de livrables, tests utilisateurs.",
 		},
 		{
 			id: 3,
 			iconName: "tji-support",
-			title: "Optimisation & Support",
+			title: "Déploiement & accompagnement",
 			desc: "Modifications, refactorisations des livrables validés, formations à l'utilisation.",
 		},
 	];
 	return (
-		<div className="tj-working-process-2 section-gap section-gap-x">
-			<div className="container">
+		<section className="tj-working-process-2 section-gap section-gap-x">
+			<div className="container-fluid">
 				<div className="row">
 					<div className="col-12">
+						{/* sec-heading sec-heading-centered style-3 */}
 						<div className="sec-heading sec-heading-centered style-3">
 							<span className="sub-title wow fadeInUp" data-wow-delay="0.3s">
-								<i className="tji-subtitle-2"></i>How Its Work
+								<i className="tji-subtitle-2"></i>Le Process
 							</span>
-							<h2 className="sec-title text-anim">
-								Construisons une étape à la fois
-							</h2>
 						</div>
+						{/*text-anim*/}
+						<h2 className="sec-title process-h2">
+							Création d&#39;applications web sur mesure
+						</h2>
 					</div>
 				</div>
-				<div className="row row-gap-4">
+				<div className="row row-gap-4 process-card-row">
 					{items?.length
 						? items?.map((item, idx) => (
-								<div key={idx} className="col-lg-4">
+								<div key={idx} className="col-lg-4 col-xl-3">
 									<ProcessCard2 item={item} idx={idx} />
 								</div>
 						  ))
 						: ""}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

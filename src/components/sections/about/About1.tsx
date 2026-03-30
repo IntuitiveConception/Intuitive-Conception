@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const About1 = () => {
 	return (
-		<section className="tj-about-section">
-			<div className="container">
+		<section className=" about-1-gap">
+			<div className="about-container">
 				<div className="row">
 					<div className="col-xl-4 col-lg-5 order-lg-1 order-2">
 						<div
@@ -17,8 +17,8 @@ const About1 = () => {
 								height={591}
 								loading="eager"
 								priority
-								src="/images/about/about-img-1.webp"
-								alt="Image"
+								src="/images/about/ai-about-2.png"
+								alt="Agence de développement web à Nouméa"
 							/>
 						</div>
 					</div>
@@ -26,27 +26,10 @@ const About1 = () => {
 						<div className="about-content-area">
 							<div className="sec-heading">
 								<span className="sub-title wow fadeInUp" data-wow-delay=".3s">
-									<i className="tji-subtitle"></i>About our Company
+									<i className="tji-subtitle"></i>Nouvelle-Calédonie
 								</span>
 								<h2 className="sec-title title-highlight">
-									Driving Innovation{" "}
-									<Image
-										width={344}
-										height={108}
-										style={{ width: "auto" }}
-										src="/images/about/title-img-1.webp"
-										alt="Image"
-									/>
-									Through AI and Technology, Delivering Our Tailored{" "}
-									<Image
-										width={108}
-										height={108}
-										style={{ width: "auto" }}
-										src="/images/about/title-img-2.webp"
-										alt="Image"
-									/>{" "}
-									Solutions are Best that Transform Next Businesses and Enhance
-									Efficient Level Seam Effective & Sustainable
+									Pourquoi faire appel à notre agence web ?
 								</h2>
 							</div>
 							<div
@@ -54,33 +37,12 @@ const About1 = () => {
 								data-wow-delay=".4s"
 								data-wow-duration="0.8s"
 							>
-								<ul className="list-style-1">
-									<li>Artificial Intelligence</li>
-									<li>Local Insights</li>
-									<li>Business Analytics</li>
-									<li>Identity Management</li>
-									<li>Public Infrastructure</li>
+								<ul className="about-list-style-2">
+									<li>Gagnez du temps grâce à l’automatisation de vos processus</li>
+									<li>Centralisez vos opérations dans des outils métiers sur mesure</li>
+									<li>Déployez une solution évolutive adaptée à votre activité</li>
+									<li>Bénéficiez d’un accompagnement technique local et durable</li>
 								</ul>
-								<div className="btn-hover-wrapper">
-									<Link className="about-btn btn-hover-inner" href="/about">
-										<span className="text-wrap">
-											<span className="btn-text">
-												<span>Explore Us More</span>
-											</span>
-											<span className="btn-icon">
-												<span>
-													<i className="tji-arrow-right"></i>
-												</span>
-											</span>
-										</span>
-										<Image
-											width={162}
-											height={162}
-											src="/images/about/btn-img.webp"
-											alt="Image"
-										/>
-									</Link>
-								</div>
 							</div>
 						</div>
 					</div>

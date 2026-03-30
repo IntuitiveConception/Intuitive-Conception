@@ -6,13 +6,24 @@ START: Theme Slider CSS
 .tj-slider-section {
 	position: relative;
 	z-index: 1;
-	margin: 0 30px 0;
+	margin: 0;
 	@media #{$xxl, $xl, $lg, $md} {
-		margin: 0 15px 0;
+		margin: 0;
 	}
 	@media #{$sm, $xs} {
 		margin: 0;
 		border-radius: 12px;
+	}
+}
+.slider-container {
+	@media #{$xl} {
+		padding-left: 3vw;
+	}
+	@media #{$sm, $md, $lg} {
+		padding-left: 4vw;
+	}
+	@media #{$xs} {
+		padding: 3vw;
 	}
 }
 
@@ -32,12 +43,16 @@ START: Theme Slider CSS
 		width: 100%;
 		height: 100%;
 		z-index: 2;
-
 		background: linear-gradient(
 			rgba(0, 2, 51, 0.15) 60%,
 			#1A1A1A 140%
 		);
-
+		@media #{$xxs, $xs} {
+			background: linear-gradient(
+				rgba(0, 2, 51, 0.15) 20%,
+				#1A1A1A 100%
+			);
+		}
 	}
 	.slider-wrapper {
 		max-width: 1480px;
@@ -49,9 +64,11 @@ START: Theme Slider CSS
 		flex-direction: column;
 		justify-content: end;
 		height: 100%;
-
-		@media #{$xxxl} {
-			max-width: 1400px;
+		@media #{$qhd} {
+			max-width: 80%;
+		}
+		@media #{$xxxl, $fhd} {
+			max-width: 80%;
 		}
 		@media #{$xxl} {
 			padding-inline-start: 70px;
@@ -102,7 +119,7 @@ START: Theme Slider CSS
 				font-size: 15px;
 				color: var(--tj-color-theme-primary);
 			}
-			@media #{$md} {
+			@media #{$xxs, $md} {
 				display: none;
 			}
 		}
@@ -135,26 +152,27 @@ START: Theme Slider CSS
 				}
 			}
 			@media #{$xxl} {
-				font-size: 100px;
+				font-size: 60px;
+				line-height: 1.5;
 			}
 			@media #{$xl} {
 				font-size: 82px;
 			}
 			@media #{$lg} {
-				font-size: 75px;
+				font-size: 4vw;
 			}
 			@media #{$md} {
-				font-size: 60px;
+				font-size: 4vw;
 				font-weight: bold;
 				margin-bottom: 15px;
 			}
-			@media #{$sm, $xs} {
+			@media #{$sm} {
 				font-size: 50px;
 				font-weight: bold;
 				margin-bottom: 20px;
 			}
-			@media #{$xxs} {
-				font-size: 30px;
+			@media #{$xxs, $xs} {
+				font-size: 8vw;
 				font-weight: bold;
 				margin-bottom: 20px;
 			}
@@ -163,6 +181,7 @@ START: Theme Slider CSS
 			max-width: 350px;
 			width: 100%;
 			font-size: 20px;
+			font-weight: bold;
 			line-height: 1.444;
 			color: var(--tj-color-white-2);
 			margin-bottom: 25px;
@@ -172,6 +191,9 @@ START: Theme Slider CSS
 			@media #{$lg} {
 				max-width: 270px;
 				font-size: 16px;
+			}
+			@media #{$xxs} {
+				color: var(--tj-color-common-white);
 			}
 		}
 		.slider-btn {
@@ -229,6 +251,7 @@ START: Theme Slider CSS
 	@media #{$sm, $xs} {
 		height: 92vh;
 		border-radius: 0 0 16px 16px;
+		width: 100% !important;
 	}
 }
 

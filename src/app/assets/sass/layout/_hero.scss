@@ -3,12 +3,22 @@
 /**----------------------------------------
 START: Hero CSS
 ----------------------------------------*/
+.hero-3-h1 {
+	font-size: 3vw;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 5vw;
+	color: var(--tj-color-common-white);
+}
+
 .tj-banner-section {
 	position: relative;
+	width: 100%;
 	padding-top: 144px;
 	overflow: hidden;
 	padding-left: 60px;
 	padding-right: 60px;
+	margin-bottom: 5vw;
 	&::after,
 	&::before {
 		content: "";
@@ -44,7 +54,7 @@ START: Hero CSS
 	}
 
 	@media #{$xl, $lg, $md, $sm} {
-		padding-left: 30px;
+		padding-left: 0;
 		padding-right: 30px;
 	}
 	@media #{$xs} {
@@ -56,21 +66,35 @@ START: Hero CSS
 	}
 }
 .banner-content-area {
-	max-width: 1435px;
+	/*max-width: 1435px;*/
 	margin: 0 auto;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	padding: 84px 0;
 	position: relative;
-	@media #{$md, $sm, $xs} {
-		flex-direction: column;
-		padding: 70px 0;
+	@media #{$xxl, $xxxl, $fhd, $qhd, $uhd} {
+		padding: 9vh 0;
+	}
+	@media #{$xl} {
+		padding: 8vh 0;
+	}
+	@media #{$md, $lg} {
+		padding: 10vh 0;
+	}
+	@media #{$xxs, $xs, $sm} {
+		padding: 25vw 0;
+	}
+	@media #{$xxs} {
+		padding: 30vw 0;
+	}
+	@media #{$xl, $lg, $md, $sm} {
+		padding-left: 5vw;
 	}
 }
 .banner-col {
-	width: 45%;
+	width: 100%;
 	&:first-child {
-		width: 55%;
+		width: 80%;
 	}
 	@media #{$md, $sm, $xs} {
 		width: 100%;
@@ -81,12 +105,11 @@ START: Hero CSS
 }
 
 .banner-content {
-	max-width: 740px;
+	/*max-width: 740px;*/
 	width: 100%;
 	margin-top: 17px;
 	.banner-title {
 		color: var(--tj-color-common-white);
-		line-height: 1.053;
 		margin-bottom: 15px;
 		span {
 			display: inline-flex;
@@ -122,17 +145,29 @@ START: Hero CSS
 			line-height: 1.15;
 		}
 		@media #{$sm, $xs} {
-			font-size: 43px;
+			font-size: 7vw;
 			line-height: 1.15;
 		}
 		@media #{$xxs} {
-			font-size: 40px;
+			font-size: 7vw;
 			line-height: 1.15;
 		}
 	}
-
+	p {
+		@media #{$lg, $xl, $xxl, $fhd, $qhd, $uhd} {
+			font-size: 2vw;
+		}
+		@media #{$sm, $md} {
+			font-size: 3vw;
+		}
+		@media #{$xs} {
+			font-size: 4vw;
+		}
+		@media #{$xxs} {
+			font-size: 5vw;
+		}
+	}
 	@media #{$xl} {
-		max-width: 570px;
 		margin-inline-start: 0;
 	}
 	@media #{$lg} {

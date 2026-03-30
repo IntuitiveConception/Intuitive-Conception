@@ -38,7 +38,7 @@ const OffcanvasPopup: FC<PropType> = ({
 										height={154}
 										style={{ height: "auto" }}
 										src="/images/logos/IC_logo.png"
-										alt="Logo"
+										alt="Agence de développement web à Nouméa"
 									/>
 								</Link>
 							</div>
@@ -74,27 +74,11 @@ const OffcanvasPopup: FC<PropType> = ({
 						</div>
 						<div className="offcanvas-text">
 							<p>
-								Écoute de vos besoins et conception de vos solutions.
+								Nous concevons des applications web, outils métiers et solutions SaaS pour
+      							aider les entreprises à Nouméa, Dumbéa, Païta et dans toute la Nouvelle-Calédonie
+								à automatiser leurs processus et accélérer leur croissance.
 							</p>
 						</div>
-						{/*
-						<div className="hamburger-search-area">
-							<h5 className="hamburger-title">Search Now!</h5>
-							<div className="hamburger_search">
-								<form method="get" action="index.html">
-									<button type="submit">
-										<i className="tji-search"></i>
-									</button>
-									<input
-										type="search"
-										autoComplete="off"
-										name="search"
-										placeholder="Search here..."
-									/>
-								</form>
-							</div>
-						</div>
-						*/}
 						<div className="hamburger-infos">
 							<h5 className="hamburger-title">Coordonnées</h5>
 							<div className="contact-info">
@@ -111,9 +95,9 @@ const OffcanvasPopup: FC<PropType> = ({
 									</Link>
 								</div>
 								<div className="contact-item">
-									<span className="subtitle">Location</span>
+									<span className="subtitle">Ville</span>
 									<span className="contact-link">
-										Dumbea, Nouvelle-Calédonie
+										Dumbéa, Nouvelle-Calédonie
 									</span>
 								</div>
 							</div>

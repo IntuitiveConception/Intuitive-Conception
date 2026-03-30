@@ -2,6 +2,8 @@ import { ServiceType } from "@/libs/getALlServices";
 import modifyNumber from "@/libs/modifyNumber";
 import Image from "next/image";
 import Link from "next/link";
+
+
 interface PropType {
 	item: ServiceType;
 	idx: number;
@@ -9,23 +11,24 @@ interface PropType {
 const ServiceCard2 = ({ item, idx = 0 }: PropType) => {
 	const {
 		title,
+		SEOTitle,
 		desc,
 		id = 0,
+		slug = "",
 		img = "/images/service/service-1.webp",
-		iconName,
 	} = item || {};
 	return (
 		<div className="service-item style-2">
 			<div className="service-inner">
 				<div className="service-content">
-					<h4 className="title">
-						<Link href={`/services/${id}`}>{title}</Link>
-					</h4>
+					<h2 className="service-detail-h2">
+						<Link href={`/services/${slug}`}>{title}</Link>
+					</h2>
 					<p className="desc">{desc}</p>
 				</div>
 				<div className="service-img">
-					<Image width={490} height={360} src={img} alt="Image" />
-					<Link className="text-btn" href={`/services/${id}`}>
+					<Image width={490} height={360} src={img} alt={SEOTitle} />
+					<Link className="text-btn" href={`/services/${slug}`}>
 						<span className="btn-text">
 							<span>En Savoir Plus</span>
 						</span>

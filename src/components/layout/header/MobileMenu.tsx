@@ -41,7 +41,7 @@ const MobileMenu: FC<MobileMenuProps> = ({
 										height={154}
 										style={{ height: "auto" }}
 										src="/images/logos/IC_logo.png"
-										alt="Logo"
+										alt="Agence de développement web à Nouméa"
 									/>
 								</Link>
 							</div>

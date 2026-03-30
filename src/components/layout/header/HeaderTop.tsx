@@ -34,6 +34,12 @@ const HeaderTop: FC<HeaderTopProps> = ({ type }) => {
 									</span>
 									<Link href="tel:+687805423">+687 805423</Link>
 								</div>
+								<div className="info-item">
+									<span>
+										<i className="tji-location"></i>
+									</span>
+									<Link href="mailto:contact@intuitive-conception.com">Nouvelle-Calédonie</Link>
+								</div>
 							</div>
 						</div>
 					</div>

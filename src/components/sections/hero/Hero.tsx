@@ -7,23 +7,13 @@ const Hero = () => {
 			<div className="banner-content-area">
 				<div className="banner-col">
 					<div className="banner-content">
-						<h1 className="banner-title text-anim">
-							Innovation Smarter Solutions Pattern{" "}
-							<span>
-								<Image
-									width={163}
-									height={60}
-									style={{ height: "auto" }}
-									className="wow fadeInRight"
-									data-wow-delay="0.65s"
-									src="/images/hero/profile.webp"
-									alt="Image"
-								/>
-							</span>{" "}
-							Gleaming Expanses.
+						<h1 className="banner-title">
+							Agence web à Nouméa et en Nouvelle-Calédonie
 						</h1>
+						<p>Basée en Nouvelle-Calédonie, notre agence accompagne les entreprises locales à Nouméa, Dumbéa, Païta et dans tout le territoire.</p>
 					</div>
 				</div>
+				{/*}
 				<div className="banner-col">
 					<div
 						className="banner-highlight wow fadeInUp"
@@ -56,15 +46,17 @@ const Hero = () => {
 						</div>
 					</div>
 				</div>
+				*/}
 				<div className="banner-scroll wow fadeIn" data-wow-delay=".3s">
 					<button data-target="#client" className="scroll-down tj-scroll-btn">
 						<span>
 							<i className="tji-arrow-down-long"></i>
 						</span>
-						Learn More
+						En savoir plus
 					</button>
 				</div>
 			</div>
+			{/*}
 			<div
 				className="banner-img-area-1 wow fadeInUp"
 				data-wow-delay=".4s"
@@ -76,7 +68,7 @@ const Hero = () => {
 						height={747}
 						loading="eager"
 						priority
-						src="/images/hero/hero-img.webp"
+						src="/images/hero/ai-hero-1.png"
 						alt="Image"
 					/>
 				</div>
@@ -87,6 +79,7 @@ const Hero = () => {
 					<p className="desc">Collaborative Minds, Creative Hearts.</p>
 				</div>
 			</div>
+			*/}
 		</section>
 	);
 };

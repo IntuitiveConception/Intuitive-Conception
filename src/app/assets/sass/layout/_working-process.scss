@@ -3,6 +3,24 @@
 /**----------------------------------------
 START: Working process CSS
 ----------------------------------------*/
+.process-h2 {
+	text-align: center;
+	margin-bottom: 3vw;
+}
+.process-card-h3 {
+	color: var(--tj-color-common-white);
+	font-size: 2vw;
+	@media #{$qhd, $uhd} {
+		font-size: 1.5vw;
+	}
+	@media #{$md} {
+		font-size: 4vw;
+	}
+	@media #{$xxs, $xs, $sm} {
+		font-size: 5vw;
+	}
+}
+
 .tj-working-process {
 	background-color: var(--tj-color-theme-bg);
 	border-radius: 24px;
@@ -45,6 +63,14 @@ START: Working process CSS
 		margin-bottom: 40px;
 	}
 }
+
+.process-card-row {
+	@media #{$xl, $xxl, $xxxl, $fhd, $qhd, $uhd} {
+		display: flex;
+		justify-content: center;
+	}
+}
+
 .process {
 	&-item {
 		&-wrap {
@@ -131,7 +157,21 @@ START: Working process CSS
 		display: flex;
 		align-items: center;
 		gap: 20px;
-
+		@media #{$qhd, $uhd} {
+			height: 15vw;
+		}
+		@media #{$xxxl, $fhd} {
+			height: 21vw;
+		}
+		@media #{$xxl} {
+			height: 24vw;
+		}
+		@media #{$xl} {
+			height: 28vw;
+		}
+		@media #{$lg} {
+			height: 31vw;
+		}
 		@media #{$sm, $xs} {
 			padding: 30px 30px 30px 20px;
 		}
@@ -218,6 +258,12 @@ START: Working process CSS
 		}
 		.desc {
 			margin: 0;
+			@media #{$qhd, $uhd} {
+				font-size: 0.8vw;
+			}
+			@media #{$md} {
+				font-size: 3vw;
+			}
 		}
 	}
 }
