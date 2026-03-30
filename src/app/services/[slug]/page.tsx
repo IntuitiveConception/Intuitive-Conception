@@ -21,7 +21,7 @@ interface PropsType {
 // METADATA
 // ------------------------------
 export async function generateMetadata({params}: PropsType): Promise<Metadata> {
-	const { slug } = params;
+	const { slug } = await params;
 	const item = items.find(item => item.slug === slug);
 
 	if (!item) return {};

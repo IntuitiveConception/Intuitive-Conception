@@ -29,7 +29,19 @@ START: Faq CSS
 
 .faq-h2 {
 	color: var(--tj-common-white);
-	font-size: 1vw;
+	font-size: 1.2vw;
+	@media #{$lg} {
+		font-size: 2vw;
+	}
+	@media #{$md} {
+		font-size: 3vw;
+	}
+	@media #{$sm} {
+		font-size: 4vw;
+	}
+	@media #{$xxs, $xs} {
+		font-size: 5vw;
+	}
 }
 
 .faq-img {
